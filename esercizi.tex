@@ -1,0 +1,93 @@
+ %\documentclass[a4paper,oneside,openany]{book}
+\input{../Mod_base/base}
+\input{../Mod_base/grafica}
+\input{../Mod_base/rifIndici}
+\input{../Mod_base/tcolorboxgest}
+\input{../Mod_base/matematica}
+\input{../Mod_base/tabelle}
+\DeclareCaptionFormat{grafico}{\textbf{Grafico \thefigure}#2#3}
+\DeclareCaptionFormat{esempio}{\textbf{Esempio \thefigure}#2#3}
+\newcolumntype{L}{>{$\displaystyle}l<{$}}
+\newcolumntype{C}{>{$\displaystyle}c<{$}}
+\newcolumntype{R}{>{$\displaystyle}r<{$}}
+\newcolumntype{T}{>{\centering\arraybackslash}p{1em}} 
+\newcolumntype{W}{>{\sffamily\Large $}c<{$}}
+%\newcolumntype{N}[1]{>{\centering\rule[-1mm]{0pt}{4.75mm}}m{#1}}
+\newcolumntype{M}[1]{>{\centering}p{#1}}
+\newcommand\pilH{\rule{0pt}{2.5ex}}
+\newcommand\pilD{\rule[-1ex]{0pt}{0pt}}
+\newlength{\gnat}
+\newlength{\gnam}
+
+\makeindex[options=-s ../Mod_base/oldclaudio.sti]
+\input{../Mod_base/pagina}
+\input{../Mod_base/indice}
+\input{../Mod_base/date}
+\input{../Mod_base/loghi}
+\input{../Mod_base/unita_misura}
+\input{../Mod_base/utili}
+\input{../Mod_base/stand_class}
+
+
+%per le semplificazioni
+\usepackage{cancel}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+ \usepackage{placeins} 
+
+\makeatletter
+\renewcommand\frontmatter{%
+	\cleardoublepage
+	\@mainmatterfalse
+	\pagenumbering{arabic}}
+\renewcommand\mainmatter{%
+	\cleardoublepage
+	\@mainmattertrue}
+\makeatother
+
+\listfiles
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%lunghezza arrotondamenti%%%%%
+\newcommand{\lungarrotandamento}{4}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+\frontmatter
+\begin{titlepage}
+	\begin{center}
+		\input{../Mod_base/Lgrande2}\\[1cm]       
+		\textsc{\LARGE Claudio Duchi}\\[1.5cm]
+		\HRule \\[0.4cm]
+		{\huge \bfseries Esercizi svolti di matematica}\\[0.4cm]
+	
+		\opt{quarto}{{\bfseries QUARTO}\\[0.4cm]}
+	
+		\HRule \\[1.5cm]
+		\vfill
+		{\large \DTMnow.}
+	\end{center}
+\end{titlepage}
+\setcounter{page}{2}
+\input{../Mod_base/copyright}
+\tableofcontents 
+%\addcontentsline{toc}{chapter}{\listtablename}
+%\listoftables
+\addcontentsline{toc}{chapter}{\listfigurename}
+\listoffigures
+\cleardoublepage\renewcommand\lstlistlistingname{Elenco esempi}
+\addcontentsline{toc}{chapter}{\lstlistlistingname}
+\addcontentsline{toc}{section}{Esempi}
+\lstlistoflistings{}
+\tcblistof[\section*]{thm}{Esempi}
+\addcontentsline{toc}{section}{Contro esempi}
+\tcblistof[\section*]{cthm}{Contro esempi}
+\mainmatter%
+
+\input{quarto/quarto}
+%\opt{extra}{\input{extra}}
+%\opt{grafici}{\input{grafici}}
+\input{../Mod_base/MezziUsati}
+\addcontentsline{toc}{chapter}{\indexname}
+\printindex
+\end{document}
