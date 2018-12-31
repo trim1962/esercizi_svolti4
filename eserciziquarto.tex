@@ -3,13 +3,15 @@
 
 \documentclass[openany]{book}%
 \input{../Mod_base/base}
-\geometry{top=2cm,bottom=2cm,left=2cm,right=2cm}
+\geometry{top=2cm,bottom=1cm,left=2cm,right=2cm}
 \input{../Mod_base/grafica}
 \input{../Mod_base/matematica}
 \input{../Mod_base/tabelle}
 \DeclareCaptionFormat{grafico}{\textbf{Grafico \thefigure}#2#3}
 \DeclareCaptionFormat{esempio}{\textbf{Esempio \thefigure}#2#3}
 \usepackage{imakeidx}
+\makeindex
+\makeindex[name=dissec,title=Disequazioni secondo grado]
 \makeindex[options=-s ../Mod_base/oldclaudio.sti]
 \input{../Mod_base/pagina}
 \input{../Mod_base/indice}
@@ -30,7 +32,9 @@
 	\cleardoublepage
 	\@mainmattertrue}
 \makeatother
+\newcommand{\tipo}[1]{\textbf{#1}\index[dissec]{#1}}
 
+\usepackage{qrcode}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%lunghezza arrotondamenti%%%%%
 \newcommand{\lungarrotandamento}{4}
@@ -135,4 +139,5 @@
 	
 	\addcontentsline{toc}{chapter}{\indexname}
 	\printindex
+	\printindex[dissec]
 \end{document}

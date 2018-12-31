@@ -239,8 +239,8 @@ Supponiamo di dover risolvere
  l'esempio\nobs\vref{fig:esempioDisequazioniPgrado3} è minimo, tuttavia nell'ultimo passaggio è importante ricordarsi che cambiando di segno si cambia di verso della diseguaglianza  avendo in questo caso moltiplicato per un termine negativo.\par
 Il grafico della soluzione è il grafico\nobs\vref{fig:esempioDisequazioniPgrado3}.  
 \begin{figure}
+	 
 \begin{NodesList}
-\centering
 \begin{align*}
 	3x+2\geq&\dfrac{1}{2}x+3\AddNode\\
 	2(3x+2)\geq&2(\dfrac{1}{2}x+3)\AddNode\\ %[.5cm] %\AddNode[2]\\ 
@@ -249,22 +249,30 @@ Il grafico della soluzione è il grafico\nobs\vref{fig:esempioDisequazioniPgrado
 	5x\geq&2\AddNode\\
 	x\geq&\dfrac{2}{5}\AddNode
 \end{align*}
-\LinkNodes[margin=6cm]{\begin{minipage}[h]{5cm}
-Moltiplico per $2x$ ed elimino la frazione
-\end{minipage}}
-\LinkNodes[margin=6cm]{\begin{minipage}[h]{5cm}
-Semplifico
-\end{minipage}}%
-\LinkNodes[margin=6cm]{\begin{minipage}[h]{5cm}
-Sposto $x$ e $4$ cambiando di segno
-\end{minipage}}%
-\LinkNodes[margin=6cm]{\begin{minipage}[h]{5cm}
-Sommo
-\end{minipage}}%
-\LinkNodes[margin=6cm]{\begin{minipage}[h]{5cm}
-Divido
-\end{minipage}}%
+\LinkNodes{%\begin{minipage}{5cm}
+%Moltiplico per $2x$ ed elimino la frazione
+%\end{minipage}
+}
+\LinkNodes{
+%	\begin{minipage}[h]{5cm}
+%Semplifico
+%\end{minipage}
+}%
+\LinkNodes{
+	%\begin{minipage}[h]{5cm}
+%Sposto $x$ e $4$ cambiando di segno
+%\end{minipage}
+}%
+\LinkNodes{%\begin{minipage}[h]{5cm}
+%Sommo
+%\end{minipage}
+}%
+\LinkNodes{%\begin{minipage}[h]{5cm}
+%Divido
+%\end{minipage}
+}
 \end{NodesList}
+
 \captionsetup{format=esempio,list=no}\caption{Risoluzione disequazione\nobs\vref{equ:PrimoGradoDisequazione2}}
 \label{fig:esempioDisequazioniPgrado2}
 \end{figure}
