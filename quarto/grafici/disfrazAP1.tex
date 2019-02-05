@@ -1,0 +1,52 @@
+\documentclass[10pt]{standalone}
+\usepackage[utf8]{inputenc}
+\usepackage{pgf,tikz,pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+	\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+	\begin{axis}[
+	x=1.0cm,%y=1.0cm,
+	axis x line=middle,
+	axis y line=none,
+	ticks=none,
+	xmin=0.0,
+	xmax=10.0,
+	ymin=-1.0,
+	ymax=3.0,
+	]
+\clip(0.,-0.8) rectangle (10.,2.5);
+\draw  (7.5,2.)-- (7.5,0.);
+\draw  (7.5,2.)-- (10.,2.);
+\draw [dash pattern=on 4pt off 4pt] (0.,2.)-- (7.5,2.);
+\draw  (2.5,1.)-- (2.5,0.);
+\draw  (5.0,0.98)-- (5.0,-0.06);
+\draw  (2.5,1.)-- (0.,1.);
+\draw [dash pattern=on 4pt off 4pt] (2.5,1.)-- (5.0,1);
+\draw  (5.0,1)-- (10.,1.);
+\begin{scriptsize}
+\draw  (7.5,2.) circle (2.5pt);
+
+\draw [fill=black] (7.5,0.) circle (2.5pt);
+\draw[color=black] (7.5,-0.37) node {$-\dfrac{1}{2}$};
+\draw [fill=black] (2.5,1.) circle (2.5pt);
+
+\draw [fill=black] (2.5,0.) circle (2.5pt);
+\draw[color=black] (2.5,-0.37) node {$-\dfrac{3}{2}$};
+
+\draw [fill=black] (5.0,1.0) circle (2.5pt);
+
+\draw [fill=black] (5.0,0.0) circle (2.5pt);
+\draw[color=black] (5.0,-0.37) node {$-\dfrac{2}{3}$};
+\draw (1.25,0.4) node {$-$};
+\draw (3.75,0.4) node {$\oplus$};
+\draw (6.25,0.4) node {$-$};
+\draw (8.75,0.4) node {$\oplus$};
+
+\end{scriptsize}
+\end{axis}
+\end{tikzpicture}
+\end{document}
