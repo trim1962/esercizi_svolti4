@@ -43,34 +43,35 @@ Analogo discorso con l'esempio~\vref{fig:DisPgradoesempio1b}. In questo caso la 
 Per la moltiplicazione il discorso è quasi analogo. Nell'esempio\nobs\vref{fig:esempioDisPrimoGrado3} la disuguaglianza si mantiene vera moltiplicando entrambi i lati per una quantità positiva.\par Il discorso cambia se moltiplichiamo a sinistra e a destra per una quantità negativa. Infatti, nell'esempio\nobs\vref{fig:esempioDisPrimoGrado4}, la disuguaglianza, per mantenersi vera, deve essere invertita.
 \begin{figure}
 	\centering
-	\begin{subfigure}[b]{.4\linewidth}
+	\begin{subfigure}[b]{.9\linewidth}
 		\begin{NodesList}
 			\centering
 			\begin{align*}
-				-3<&6\AddNode\\
+				-3<&6\AddNode\\[.5cm]
 				-3+2<&6+2\AddNode\\[.5cm] 
 				-1<&8\AddNode
 			\end{align*}
-			%\tikzset{LabelStyle/.style = {left=0.1cm,pos=0.5,text=red,fill=white}}
+			\tikzset{LabelStyle/.style = {left=0.1cm,pos=0.5,text=red,fill=white}}
 			\LinkNodes{Sommo $+2$}%    
 			\LinkNodes{\begin{minipage}[h]{3cm}
 					La disuguaglianza è ancora verificata
 				\end{minipage}}%
 			\end{NodesList}
-		%\includestandalone[width=\textwidth]{DisPromoGrado/disPrimogradoEsempio1}
+		\tikzset{LabelStyle/.style = {left=0.1cm,pos=0.5,text=red,fill=white}}
 		\caption{Sommando quantità positive}
 		\label{fig:DisPgradoesempio1a}
 	\end{subfigure}%
+\qquad
 	\centering
-	\begin{subfigure}[b]{.4\linewidth}
+	\begin{subfigure}[b]{.9\linewidth}
 	\begin{NodesList}
 		\centering
 		\begin{align*}
-			6<&8\AddNode\\
+			6<&8\AddNode\\[.5cm]
 			6-3<&8-3\AddNode\\[.5cm]
 			3<&5\AddNode
 		\end{align*}
-		%\tikzset{LabelStyle/.style = {left=0.1cm,pos=0.5,text=red,fill=white}}
+		\tikzset{LabelStyle/.style = {left=0.1cm,pos=0.5,text=red,fill=white}}
 		\LinkNodes{sommo $-3$}%    
 		\LinkNodes{\begin{minipage}[h]{3cm}
 				La disuguaglianza è ancora verificata
@@ -85,38 +86,42 @@ Per la moltiplicazione il discorso è quasi analogo. Nell'esempio\nobs\vref{fig:
 \end{figure}
 \begin{figure}
 	\centering
-	\begin{subfigure}[b]{.4\linewidth}
+	\begin{subfigure}[b]{.9\linewidth}
 	\begin{NodesList}
 		\centering
 		\begin{align*}
-			3<&6\AddNode\\
+			3<&6\AddNode\\[.5cm]
 			6\cdot 2<&6\cdot 2\AddNode\\[.5cm] 
 			6<&12\AddNode
 		\end{align*}
-		%\tikzset{LabelStyle/.style = {left=0.1cm,pos=0.5,text=red,fill=white}}
+		\tikzset{LabelStyle/.style = {left=0.1cm,pos=0.5,text=red,fill=white}}
 		\LinkNodes{Moltiplico per $+2$}%    
 		\LinkNodes{\begin{minipage}[h]{3cm}
 				La disuguaglianza è ancora verificata
-			\end{minipage}}%
+			\end{minipage}
+		}%
 		\end{NodesList}
 			%\includestandalone[width=\textwidth]{DisPromoGrado/disPrimogradoEsempio1}
 			\caption{Moltiplicando quantità positive}
 			\label{fig:esempioDisPrimoGrado3}
 		\end{subfigure}%
+	\qquad
 		\centering
-		\begin{subfigure}[b]{.4\linewidth}
+		\begin{subfigure}[b]{.9\linewidth}
 			\begin{NodesList}
 				\centering
 				\begin{align*}
-					-2<&5\AddNode\\
+					-2<&5\AddNode\\[.5cm]
 					6\cdot(-2) <&6\cdot (-2)\AddNode\\[.5cm]
 					4>&-10\AddNode
 				\end{align*}
-				%\tikzset{LabelStyle/.style = {left=0.1cm,pos=0.5,text=red,fill=white}}
+			\tikzset{LabelStyle/.style = {left=0.1cm,pos=0.5,text=red,fill=white}}
 				\LinkNodes{Moltiplico per $-2$}%    
-				\LinkNodes{\begin{minipage}[h]{3cm}
+				\LinkNodes{
+					\begin{minipage}[h]{3cm}
 						La disuguaglianza è ancora verificata
-					\end{minipage}}%
+					\end{minipage}
+				}%
 				\end{NodesList}
 				\caption{Moltiplicando quantità negative}
 				\label{fig:esempioDisPrimoGrado4}
@@ -180,17 +185,18 @@ Il metodo per risolvere una disequazione di primo è simile a quello per risolve
 		\begin{align*}
 			3x+5<&2x+6\AddNode\\[.5cm] 
 			3x+5-2x<&6\AddNode\\[.5cm] %\AddNode[2]\\ 
-			3x-2x<&6-5\AddNode\\
+			3x-2x<&6-5\AddNode\\[.5cm]
 			x<&1\AddNode
 		\end{align*}
-		\LinkNodes[margin=6cm]{\begin{minipage}[h]{5cm}
-				Sposto $2x$ a sinistra e cambio di segno
+		\tikzset{LabelStyle/.style = {left=0.1cm,pos=0.5,text=red,fill=white}}
+		\LinkNodes{\begin{minipage}[h]{5cm}
+				Sposto $2x$ a sinistra% e cambio di segno
 			\end{minipage}}
 			%\LinkNodes{Sposto $2x$ a sinistra e cambio di segno}%
-			\LinkNodes[margin=6cm]{\begin{minipage}[h]{5cm}
-					Sposto $+5$ a destra e cambio di segno
+			\LinkNodes{\begin{minipage}[h]{5cm}
+					Sposto $+5$ a destra% e cambio di segno
 				\end{minipage}}%
-				\LinkNodes[margin=6cm]{\begin{minipage}[h]{5cm}
+				\LinkNodes{\begin{minipage}[h]{5cm}
 						Sommo
 					\end{minipage}}%
 				\end{NodesList}
@@ -243,36 +249,36 @@ Il grafico della soluzione è il grafico\nobs\vref{fig:esempioDisequazioniPgrado
 \begin{NodesList}
 \begin{align*}
 	3x+2\geq&\dfrac{1}{2}x+3\AddNode\\
-	2(3x+2)\geq&2(\dfrac{1}{2}x+3)\AddNode\\ %[.5cm] %\AddNode[2]\\ 
-	6x+4\geq&x+6\AddNode\\
-	6x-x\geq&6-4\AddNode\\
-	5x\geq&2\AddNode\\
+	2(3x+2)\geq&2(\dfrac{1}{2}x+3)\AddNode\\[.5cm] %\AddNode[2]\\ 
+	6x+4\geq&x+6\AddNode\\[.5cm]
+	6x-x\geq&6-4\AddNode\\[.5cm]
+	5x\geq&2\AddNode\\[.5cm]
 	x\geq&\dfrac{2}{5}\AddNode
 \end{align*}
-\LinkNodes{%\begin{minipage}{5cm}
-%Moltiplico per $2x$ ed elimino la frazione
+\tikzset{LabelStyle/.style = {left=0.1cm,pos=0.5,text=red,fill=white}}
+\LinkNodes{%\begin{minipage}{6cm}
+Moltiplico per $2x$% ed elimino la frazione
 %\end{minipage}
 }
 \LinkNodes{
-%	\begin{minipage}[h]{5cm}
-%Semplifico
+	%\begin{minipage}[h]{6cm}
+Semplifico
 %\end{minipage}
 }%
 \LinkNodes{
-	%\begin{minipage}[h]{5cm}
-%Sposto $x$ e $4$ cambiando di segno
+%	\begin{minipage}[h]{6cm}
+Sposto $x$ e $4$% cambiando di segno
+%\end{minipage}
+}%
+\LinkNodes{%\begin{minipage}[h]{6cm}
+Sommo
 %\end{minipage}
 }%
 \LinkNodes{%\begin{minipage}[h]{5cm}
-%Sommo
-%\end{minipage}
-}%
-\LinkNodes{%\begin{minipage}[h]{5cm}
-%Divido
+Divido
 %\end{minipage}
 }
 \end{NodesList}
-
 \captionsetup{format=esempio,list=no}\caption{Risoluzione disequazione\nobs\vref{equ:PrimoGradoDisequazione2}}
 \label{fig:esempioDisequazioniPgrado2}
 \end{figure}
@@ -298,21 +304,25 @@ Il grafico della soluzione è il grafico\nobs\vref{fig:esempioDisequazioniPgrado
 	\begin{NodesList}
 		\centering
 		\begin{align*}
-			3x+2>&4x+3\AddNode\\
-			3x-4x>&3-2\AddNode\\
-			-x>&1\AddNode\\
+			3x+2>&4x+3\AddNode\\[.5cm]
+			3x-4x>&3-2\AddNode\\[.5cm]
+			-x>&1\AddNode\\[.5cm]
 			x<&-1\AddNode
 		\end{align*}
+		\tikzset{LabelStyle/.style = {left=0.1cm,pos=0.5,text=red,fill=white}}
 		%\LinkNodes{Sposto $2x$ a sinistra e cambio di segno}%
-		\LinkNodes[margin=6cm]{\begin{minipage}[h]{5cm}
-				Sposto $4x$ e $+3$ cambiando di segno
-			\end{minipage}}%
-			\LinkNodes[margin=6cm]{\begin{minipage}[h]{5cm}
+		\LinkNodes{%\begin{minipage}[h]{5cm}
+				Sposto $4x$ e $+3$%
+			%\end{minipage}
+		}%
+			\LinkNodes{%\begin{minipage}[h]{5cm}
 					Sommo
-				\end{minipage}}%
-				\LinkNodes[margin=6cm]{\begin{minipage}[h]{5cm}
+			%	\end{minipage}
+			}%
+				\LinkNodes{%\begin{minipage}[h]{5cm}
 						Cambio di segno e di verso
-					\end{minipage}}%
+				%	\end{minipage}
+				}%
 				\end{NodesList}
 	\captionsetup{format=esempio,list=no}
 	\caption{Risoluzione disequazione\nobs\vref{equ:PrimoGradoDisequazione3}}
@@ -504,12 +514,13 @@ Iniziamo con il risolvere  la disequazione\nobs\vref{equ:ProdDis3a}. Utilizzando
 	\begin{subfigure}[]{\linewidth}
 		\begin{NodesList}
 			\begin{align*}
-				2-x\geq 0&\AddNode\\%
-				-x\geq-2&\AddNode\\%
+				2-x\geq 0&\AddNode\\[.5cm]%
+				-x\geq-2&\AddNode\\[.5cm]%
 				x\leq 2&\AddNode%
 			\end{align*}
-			\LinkNodes[margin=6cm]{}%
-			\LinkNodes[margin=6cm]{}%
+			\tikzset{LabelStyle/.style = {left=0.1cm,pos=0.5,text=red,fill=white}}
+			\LinkNodes{sposto $2$}%
+			\LinkNodes{cambio di segno}%
 		\end{NodesList}
 	%	\renewcommand\thesubfigure{Svolgimento \thefigure\alph{subfigure}}
 		\caption{Risoluzione disequazione}
@@ -540,13 +551,14 @@ Iniziamo con il risolvere  la disequazione\nobs\vref{equ:ProdDis3a}. Utilizzando
 		\begin{NodesList}
 			\centering
 			\begin{align*}
-				3x-1\geq& 0\AddNode\\
-				3x\geq&1\AddNode\\
+				3x-1\geq& 0\AddNode\\[.5cm]
+				3x\geq&1\AddNode\\[.5cm]
 				x\geq&\dfrac{1}{3}\AddNode
 			\end{align*}
-			%\LinkNodes{Sposto $2x$ a sinistra e cambio di segno}%
-			\LinkNodes[margin=6cm]{}%
-			\LinkNodes[margin=6cm]{}%
+			\tikzset{LabelStyle/.style = {left=0.1cm,pos=0.5,text=red,fill=white}}
+			\LinkNodes{Sposto $2x$  e cambio di segno}%
+			\LinkNodes{}%
+			\LinkNodes{Divido}%
 		\end{NodesList}
 		\caption{Risoluzione disequazione}
 		\label{svo:ProDis3b}
@@ -575,13 +587,14 @@ Iniziamo con il risolvere  la disequazione\nobs\vref{equ:ProdDis3a}. Utilizzando
 		\begin{NodesList}
 			\centering
 			\begin{align*}
-				\dfrac{2}{3}-x\geq& 0\AddNode\\
-				-x\geq&-\dfrac{2}{3}\AddNode\\
+				\dfrac{2}{3}-x\geq& 0\AddNode\\[.5cm]
+				-x\geq&-\dfrac{2}{3}\AddNode\\[.5cm]
 				x\leq& \dfrac{2}{3}\AddNode
 			\end{align*}
 			%\LinkNodes{Sposto $2x$ a sinistra e cambio di segno}%
-			\LinkNodes[margin=6cm]{}%
-			\LinkNodes[margin=6cm]{}%
+				\tikzset{LabelStyle/.style = {left=0.1cm,pos=0.5,text=red,fill=white}}
+			\LinkNodes{Sposto $\frac{2}{3}$}%
+			\LinkNodes{Ottengo}%
 		\end{NodesList}
 		\caption{Risoluzione disequazione}
 		\label{svo:ProDis3c}
@@ -663,13 +676,14 @@ Iniziamo con il risolvere la disequazione\nobs\vref{equ:DisFrazPrimoG1a}. Dallo 
 		\begin{NodesList}
 			\centering
 			\begin{align*}
-				3x+1\geq& 0\AddNode\\
-				3x\geq&-1\AddNode\\
+				3x+1\geq& 0\AddNode\\[.5cm]
+				3x\geq&-1\AddNode\\[.5cm]
 				x\geq&-\dfrac{1}{3}\AddNode
 			\end{align*}
+			\tikzset{LabelStyle/.style = {left=0.1cm,pos=0.5,text=red,fill=white}}
 			%\LinkNodes{Sposto $2x$ a sinistra e cambio di segno}%
-			\LinkNodes[margin=6cm]{}%
-			\LinkNodes[margin=6cm]{}%
+			\LinkNodes{Sposto $1$}%
+			\LinkNodes{Ottengo}%
 		\end{NodesList}
 		\caption{Risoluzione disequazione}
 		\label{svo:DisFrazPrimoG1a}
@@ -721,13 +735,14 @@ qui dallo svolgimento\nobs\vref{svo:DisFrazPrimoGìb} otteniamo il grafico\nobs\
 		\begin{NodesList}
 			\centering
 			\begin{align*}
-				1-x>& 0\AddNode\\
-				-x>&-1\AddNode\\
+				1-x>& 0\AddNode\\[.5cm]
+				-x>&-1\AddNode\\[.5cm]
 				x<&1\AddNode
 			\end{align*}
 			%\LinkNodes{Sposto $2x$ a sinistra e cambio di segno}%
-			\LinkNodes[margin=6cm]{}%
-			\LinkNodes[margin=6cm]{}%
+			\tikzset{LabelStyle/.style = {left=0.1cm,pos=0.5,text=red,fill=white}}
+			\LinkNodes{Spostiamo $1$}%
+			\LinkNodes{Ottengo}%
 		\end{NodesList}
 		\caption{Risoluzione disequazione}
 		\label{svo:DisFrazPrimoGìb}
