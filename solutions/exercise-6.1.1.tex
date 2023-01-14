@@ -1,0 +1,50 @@
+	Trovare il $C.E.$ della funzione $y=\dfrac{3x^2+2+3x}{7x-2-5x^2} $
+	
+	La funzione è razionale fratta\index{Razionale!Fratta} quindi
+		\begin{enumerate}
+		\item Il denominatore non può essere zero.
+	\end{enumerate}
+\begin{align*}
+\intertext{Quindi per la condizione}
+7x-2-5x^2=&0\\
+x_{1,2}=&\xunodue{-5}{7}{-2}\\
+=&\dfrac{-7\pm\sqrt{49-40}}{-10}\\
+=&\dfrac{-7\pm \sqrt{9}}{-10}\\
+=&\dfrac{-7\pm 3}{-10}\\
+=&\begin{cases}
+x_1=\dfrac{-10}{-10}=1\\
+x_2=\dfrac{-4}{-10}=\dfrac{2}{5}
+\end{cases}\\
+\end{align*}
+Quindi il $C.E.$ è
+\begin{align*}
+\forall x\in\R-\lbrace 1,&\dfrac{2}{5}\rbrace\\
+\end{align*}
+Studiamo la positività
+
+Bisogna risolvere la disequazione
+\begin{align*}
+	\dfrac{3x^2+2+3x}{7x-2-5x^2}\geq&0\\
+	\intertext{Spezzo la frazione e ottengo:}
+	3x^2+2+3x\geq&0\\
+	\intertext{Che diventa}
+	3x^2+2+3x=&0\\
+	x_{1,2}=&\xunodue{3}{3}{2}\\
+	=&\dfrac{-3\pm\sqrt{9-24}}{6}\\
+	=&\dfrac{-3\pm \sqrt{-15}}{6}\\
+	\intertext{Radice negativa non ho soluzioni}
+	\intertext{Resta da risolvere}
+	7x-2-5x^2>&0
+	\intertext{Che diventa}
+	7x-2-5x^2=&0
+	\intertext{Per il calcoli precedenti}
+	=&\begin{cases}
+		x_1=1\\
+		x_2=\dfrac{2}{5}
+	\end{cases}\\
+\end{align*}
+Otteniamo il grafico
+\begin{center}
+\includestandalone{quarto/grafici/disfrazFA_E1.tex}
+\end{center}
+La funzione è positiva per \[\dfrac{2}{5}<x<1\]

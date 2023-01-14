@@ -61,15 +61,15 @@
 	pdfencoding=auto,
 	urlcolor={blue},
 	pdftitle={Esercizi svolti},
-	pdfsubject={terzo},
+	pdfsubject={Quarto},
 	pdfstartview={FitH},
 	pdfpagemode={UseOutlines},
 	pdflicenseurl={http://creativecommons.org/licenses/by-nc-nd/3.0/},
 	pdflang={it},
 	pdfmetalang={it},
 	pdfkeywords={Parabola,Disequazioni},
-	pdfcopyright={Copyright (C) 2019, Claudio Duchi},
-	pdfcontacturl={http://breviariomatematico.altervista.org},
+	pdfcopyright={Copyright (C) 2023, Claudio Duchi},
+	%pdfcontacturl={http://breviariomatematico.altervista.org},
 	pdfcontactpostcode={},
 	pdfcontactphone={},
 	pdfcontactemail={claduc},
@@ -96,7 +96,7 @@
 			\textsc{\LARGE Claudio Duchi}\\[1.2cm]
 			\HRule \\[0.4cm]
 			{ \huge \bfseries ESERCIZI SVOLTI DI MATEMATICA}\\[0.4cm]
-			{\LARGE \textsc{QUARTO MANUTENZIONE}}
+			{\LARGE \textsc{QUARTO }}
 			\HRule \\[1.2cm]
 			\polylogo[5.5]{18}		
 		{\large $-$\DTMnow$-$}	
@@ -116,8 +116,7 @@ Release:\gitReln\ (\gitAbbrevHash)\ Autore:\gitAuthorName\
 	\renewcommand\lstlistlistingname{Esempi e contro esempi}
 	\addcontentsline{toc}{chapter}{\lstlistlistingname}
 	\addcontentsline{toc}{section}{Esempi}
-	\lstlistoflistings%{}
-	{
+
 		%	https://tex.stackexchange.com/questions/318486/number-freestyle-causes-an-overlay-in-the-list-of-tcolorboxes/318512#318512
 		\makeatletter
 		\renewcommand{\l@tcolorbox}{\@dottedtocline{1}{0pt}{3em}}
@@ -125,7 +124,6 @@ Release:\gitReln\ (\gitAbbrevHash)\ Autore:\gitAuthorName\
 		\tcblistof[\section*]{thm}{Esempi}
 		\addcontentsline{toc}{section}{Contro esempi}
 		\tcblistof[\section*]{cthm}{Contro esempi}
-	}
 	
 	\mainmatter%
 	\input{compilaDUE}
